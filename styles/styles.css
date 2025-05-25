@@ -14,14 +14,21 @@
 nav{
     background-color: var(--dark-blue);
     padding:10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 nav a{
     color:white;
     display: block;
     padding: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 h1{
     color: darkblue;
+    border-bottom: 1px solid var(--dark-blue);
 }
 
 main{
@@ -57,11 +64,21 @@ aside h2{
     left: 20px;
 }
 
+
+header, footer, .grid{
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 footer{
     margin-top:0.5rem;
     border-top:dashed 1px var(--black);
     position: relative;
     text-align: center;
+}
+header{
+    max-width: 840px;
+    margin: 0 auto;
 }
 /* Class Selectors */
 .box{
@@ -70,4 +87,8 @@ footer{
     background-color: var(--dark-blue);
     color:  var(--text-light);
 
+}
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
