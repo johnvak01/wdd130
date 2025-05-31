@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form - User Poll | WDD 130</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/poll-form.css">
+
+</head>
+<body>
+    <header>
+        <h1>HTML Form - User Poll | WDD 130</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Info</legend>
+                <div class="form-item column2">
+                    <label for="fullname"">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                    <label for="browser">What is Your favorite browser?</label>
+                    <select id="browser">
+                        <option selected value="firefox">Firefox</option>
+                        <option value="chrome">Chrome</option>
+                        <option value="safari">Safari</option>
+                    </select>
+                </div>
+                <div class="form-item column1">
+                    <label>Do you have a pet?<input name="pet" type="checkbox"></label></div>
+                </div>
+                <div class="form-item column2">
+                    <label for="feedback">List the places you have lived</label>
+                    <textarea id="feedback" name="feedback" placeholder="Rome" rows="4"></textarea>
+                </div>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>&#169;2025 | John Austin Hutchinson | USA </p>
+    </footer>
+</body>
+</html>
